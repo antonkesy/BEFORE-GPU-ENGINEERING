@@ -34,7 +34,7 @@ Treat this as a structured book. **<span style="color: #ff0000; font-weight: bol
 
 ## 📚 Syllabus
 
-> 🚧 **Work in Progress:** This series is actively being written and continuously updated. There are **5 phases** in total. **57 chapters are live so far across Phases 1–4**; Phase 5 is in progress.
+> 🚧 **Work in Progress:** This series is actively being written and continuously updated. There are **5 phases** in total. **56 chapters are live so far across Phases 1–4**; Phase 5 is in progress.
 
 ### Phase 1
 
@@ -131,19 +131,19 @@ Treat this as a structured book. **<span style="color: #ff0000; font-weight: bol
 
 #### GEMM & the Synthesis
 
-- [Chapter 50: Why Matmul Is King](https://BEFORE-GPU-ENGINEERING.github.io/BEFORE-GPU-ENGINEERING/gemm-and-the-synthesis/chapter-50.html)
-- [Chapter 51: Throughput vs. Latency Mindset](https://BEFORE-GPU-ENGINEERING.github.io/BEFORE-GPU-ENGINEERING/gemm-and-the-synthesis/chapter-51.html)
-- [Chapter 52: What Is Latency Hiding?](https://BEFORE-GPU-ENGINEERING.github.io/BEFORE-GPU-ENGINEERING/gemm-and-the-synthesis/chapter-52.html)
-- [Chapter 53: Why Profiling Beats Intuition](https://BEFORE-GPU-ENGINEERING.github.io/BEFORE-GPU-ENGINEERING/gemm-and-the-synthesis/chapter-53.html)
+- [Chapter 49: Why Matmul Is King](https://BEFORE-GPU-ENGINEERING.github.io/BEFORE-GPU-ENGINEERING/gemm-and-the-synthesis/chapter-49.html)
+- [Chapter 49: Throughput vs. Latency Mindset](https://BEFORE-GPU-ENGINEERING.github.io/BEFORE-GPU-ENGINEERING/gemm-and-the-synthesis/chapter-49.html)
+- [Chapter 49: What Is Latency Hiding?](https://BEFORE-GPU-ENGINEERING.github.io/BEFORE-GPU-ENGINEERING/gemm-and-the-synthesis/chapter-49.html)
+- [Chapter 49: Why Profiling Beats Intuition](https://BEFORE-GPU-ENGINEERING.github.io/BEFORE-GPU-ENGINEERING/gemm-and-the-synthesis/chapter-49.html)
 
 ### Phase 4
 
 #### The Measurement Mandate
 
-- [Chapter 54: The 91 Missing TFLOPS](https://BEFORE-GPU-ENGINEERING.github.io/BEFORE-GPU-ENGINEERING/the-measurement-mandate/chapter-54.html)
-- [Chapter 55: Observe, Don't Assume](https://BEFORE-GPU-ENGINEERING.github.io/BEFORE-GPU-ENGINEERING/the-measurement-mandate/chapter-55.html)
-- [Chapter 56: Nsight Systems vs. Compute](https://BEFORE-GPU-ENGINEERING.github.io/BEFORE-GPU-ENGINEERING/the-measurement-mandate/chapter-56.html)
-- [Chapter 57: What Kernel Time Measures](https://BEFORE-GPU-ENGINEERING.github.io/BEFORE-GPU-ENGINEERING/the-measurement-mandate/chapter-57.html)
+- [Chapter 49: The 91 Missing TFLOPS](https://BEFORE-GPU-ENGINEERING.github.io/BEFORE-GPU-ENGINEERING/the-measurement-mandate/chapter-49.html)
+- [Chapter 49: Observe, Don't Assume](https://BEFORE-GPU-ENGINEERING.github.io/BEFORE-GPU-ENGINEERING/the-measurement-mandate/chapter-49.html)
+- [Chapter 49: Nsight Systems vs. Compute](https://BEFORE-GPU-ENGINEERING.github.io/BEFORE-GPU-ENGINEERING/the-measurement-mandate/chapter-49.html)
+- [Chapter 49: What Kernel Time Measures](https://BEFORE-GPU-ENGINEERING.github.io/BEFORE-GPU-ENGINEERING/the-measurement-mandate/chapter-49.html)
 
 ### Phase 5
 
