@@ -128,7 +128,6 @@ Treat this as a structured book. **<span style="color: #ff0000; font-weight: bol
 - [Chapter 46: No Branch At All](https://BEFORE-GPU-ENGINEERING.github.io/BEFORE-GPU-ENGINEERING/shared-memory-and-tiling/chapter-46.html)
 - [Chapter 47: Compare And Swap](https://BEFORE-GPU-ENGINEERING.github.io/BEFORE-GPU-ENGINEERING/shared-memory-and-tiling/chapter-47.html)
 - [Chapter 48: The Tile Inside The Tile](https://BEFORE-GPU-ENGINEERING.github.io/BEFORE-GPU-ENGINEERING/shared-memory-and-tiling/chapter-48.html)
-- [Chapter 49: What Is Tiling?](https://BEFORE-GPU-ENGINEERING.github.io/BEFORE-GPU-ENGINEERING/shared-memory-and-tiling/chapter-49.html)
 
 #### GEMM & the Synthesis
 
