@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Shared Memory & Tiling - Chapter 47: Compare and swap</title>
+  <title>Shared Memory & Tiling - Chapter 47: Compare-and-swap: The universal atomic primitive.</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,400;0,700;1,400&family=Patrick+Hand&family=Space+Mono&display=swap" rel="stylesheet">
@@ -13,8 +13,8 @@
 <body>
   <div class="notebook-wrapper">
     <!-- Sidebar Navigation -->
-    <a href="chapter-46.html" class="nav-sidebar nav-prev">← Chapter 46: No branch at all</a>
-    <a href="chapter-48.html" class="nav-sidebar nav-next">Chapter 48: The tile inside the tile →</a>
+    <a href="chapter-46.html" class="nav-sidebar nav-prev">← Chapter 46: What is predication? Why GPUs refuse to branch.</a>
+    <a href="chapter-48.html" class="nav-sidebar nav-next">Chapter 48: Register tiling: The tile inside the tile. →</a>
 
     <!-- Notebook Header -->
     <div class="notebook-header">
@@ -37,7 +37,7 @@
 
       <div class="notebook-grid-content">
         <!-- Title -->
-        <h1><span class="hl-yellow" style="font-size: 0.9em;">Compare and swap</span></h1>
+        <h1><span class="hl-yellow" style="font-size: 0.9em;">Compare-and-swap: The universal atomic primitive.</span></h1>
         
         <p style="margin-top: calc(var(--grid-size) * 1.5);">
           The hardware gives you a handful of built-in atomic operations, safe ways for many threads to update the same spot without stepping on each other, like atomic addition. But what happens when you need something the hardware doesnt offer, some custom update that isnt just an add. It turns out there is one primitive underneath all of them, a single operation from which you can build any atomic update you can imagine. It is called compare-and-swap, and understanding it is understanding how threads coordinate at the deepest level, the foundation of nearly all lock-free code.

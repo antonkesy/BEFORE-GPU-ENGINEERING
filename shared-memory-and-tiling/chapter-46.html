@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Shared Memory & Tiling - Chapter 46: No branch at all</title>
+  <title>Shared Memory & Tiling - Chapter 46: What is predication? Why GPUs refuse to branch.</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,400;0,700;1,400&family=Patrick+Hand&family=Space+Mono&display=swap" rel="stylesheet">
@@ -14,7 +14,7 @@
   <div class="notebook-wrapper">
     <!-- Sidebar Navigation -->
     <a href="../global-memory-and-coalescing/chapter-45.html" class="nav-sidebar nav-prev">← Chapter 45: DRAM row-buffer thrashing: why scattered access is structurally broken.</a>
-    <a href="chapter-47.html" class="nav-sidebar nav-next">Chapter 47: Compare and swap →</a>
+    <a href="chapter-47.html" class="nav-sidebar nav-next">Chapter 47: Compare-and-swap: The universal atomic primitive. →</a>
 
     <!-- Notebook Header -->
     <div class="notebook-header">
@@ -37,7 +37,7 @@
 
       <div class="notebook-grid-content">
         <!-- Title -->
-        <h1><span class="hl-yellow" style="font-size: 0.9em;">No branch at all</span></h1>
+        <h1><span class="hl-yellow" style="font-size: 0.9em;">What is predication? Why GPUs refuse to branch.</span></h1>
         
         <p style="margin-top: calc(var(--grid-size) * 1.5);">
           There is a clever thing gpus do with small if-else branches that seems to violate common sense. Faced with a branch, the hardware sometimes refuses to branch at all. Instead of choosing a path, it runs both sides for everyone, and then quietly throws away the results nobody wanted. This sounds wasteful, and sometimes it is, but more often it is faster than the alternative, and understanding why teaches you something deep about how a bundle of gpu threads really executes.

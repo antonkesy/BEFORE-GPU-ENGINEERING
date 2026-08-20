@@ -125,9 +125,9 @@ Treat this as a structured book. **<span style="color: #ff0000; font-weight: bol
 
 #### Shared Memory & Tiling
 
-- [Chapter 46: No Branch At All](https://BEFORE-GPU-ENGINEERING.github.io/BEFORE-GPU-ENGINEERING/shared-memory-and-tiling/chapter-46.html)
-- [Chapter 47: Compare And Swap](https://BEFORE-GPU-ENGINEERING.github.io/BEFORE-GPU-ENGINEERING/shared-memory-and-tiling/chapter-47.html)
-- [Chapter 48: The Tile Inside The Tile](https://BEFORE-GPU-ENGINEERING.github.io/BEFORE-GPU-ENGINEERING/shared-memory-and-tiling/chapter-48.html)
+- [Chapter 46: What Is Predication? Why GPUs Refuse To Branch.](https://BEFORE-GPU-ENGINEERING.github.io/BEFORE-GPU-ENGINEERING/shared-memory-and-tiling/chapter-46.html)
+- [Chapter 47: Compare-And-Swap: The Universal Atomic Primitive.](https://BEFORE-GPU-ENGINEERING.github.io/BEFORE-GPU-ENGINEERING/shared-memory-and-tiling/chapter-47.html)
+- [Chapter 48: Register Tiling: The Tile Inside The Tile.](https://BEFORE-GPU-ENGINEERING.github.io/BEFORE-GPU-ENGINEERING/shared-memory-and-tiling/chapter-48.html)
 
 #### GEMM & the Synthesis
 

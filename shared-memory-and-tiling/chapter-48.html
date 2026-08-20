@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Shared Memory & Tiling - Chapter 48: The tile inside the tile</title>
+  <title>Shared Memory & Tiling - Chapter 48: Register tiling: The tile inside the tile.</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,400;0,700;1,400&family=Patrick+Hand&family=Space+Mono&display=swap" rel="stylesheet">
@@ -13,7 +13,7 @@
 <body>
   <div class="notebook-wrapper">
     <!-- Sidebar Navigation -->
-    <a href="chapter-47.html" class="nav-sidebar nav-prev">← Chapter 47: Compare and swap</a>
+    <a href="chapter-47.html" class="nav-sidebar nav-prev">← Chapter 47: Compare-and-swap: The universal atomic primitive.</a>
     <a href="../gemm-and-the-synthesis/chapter-50.html" class="nav-sidebar nav-next">Chapter 50: Why matmul is king →</a>
 
     <!-- Notebook Header -->
@@ -37,7 +37,7 @@
 
       <div class="notebook-grid-content">
         <!-- Title -->
-        <h1><span class="hl-yellow" style="font-size: 0.9em;">The tile inside the tile</span></h1>
+        <h1><span class="hl-yellow" style="font-size: 0.9em;">Register tiling: The tile inside the tile.</span></h1>
         
         <p style="margin-top: calc(var(--grid-size) * 1.5);">
           There is a technique that makes fast matrix multiplication several times faster still, on top of the usual trick of staging data in fast shared memory, and it hinges on an idea that sounds almost too simple to matter. You tile a second time, inside the first tiling. And the reason this compounds into a large win rather than a small one is a piece of arithmetic worth internalizing, because two levels of reuse do not add together, they multiply. Understanding why is understanding how the fastest kernels actually reach their speed.
